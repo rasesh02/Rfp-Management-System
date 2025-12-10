@@ -49,7 +49,7 @@ This document describes the complete backend workflow from creating an RFP email
                              ↓
                     ┌──────────────────┐
                     │ Monitors Inbox   │
-                    │ Every 60 Seconds │
+                    │                  |
                     └──────────────────┘
                              ↓
                     ┌──────────────────┐
