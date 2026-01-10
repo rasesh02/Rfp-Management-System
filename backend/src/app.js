@@ -14,12 +14,14 @@ app.use(express.static("public"));
 app.use(cookieParser())
 
 // Import routes
+import authRouter from './routes/auth.routes.js'
 import rfpRouter from './routes/rfp.routes.js'
 import vendorRouter from './routes/vendor.routes.js'
 import proposalRouter from './routes/proposal.routes.js'
 import comparisonRouter from './routes/comparison.routes.js'
 
 // Setup routes
+app.use('/v1/auth',authRouter);
 app.use('/v1/rfp', rfpRouter);
 app.use('/v1/vendor', vendorRouter);
 app.use('/v1/proposal', proposalRouter);
